@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Fashion Login</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <style>
+    body {
+      margin: 0;
+      color: #e6e9f8;
+      /* background: #ffffff; */
+      font: 600 16px/18px 'Open Sans', sans-serif;
+      background-image: url("images/1.jpg") ;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    div {
+
+      /* background-color: #5fb4b4; */
+      padding: 20px;
+    }
+
+
+    button {
+      background-color: #008080 !important;
+      padding:10px 20px 10px 20px;
+      color: white;
+      border-radius: 5px;
+      border: none;
+      font-family: 'Lucida Sans';
+      font-size: 16px;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #005858 !important ;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+    }
+
+    #all {
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      max-width: 525px;
+      min-height: 670px;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.534);
+      box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.418), 0 17px 50px 0 rgba(0, 0, 0, .19);
+    }
+
+    .group {
+      border: none;
+      padding: 15px 20px;
+      background: rgba(128, 128, 128, 0.466);
+      width: 400px;
+      display: inline-block;
+      box-sizing: border-box;
+
+    }
+    h2{
+      font-family: 'Montserrat';
+      color: white;
+    }
+    label{
+      font-family: 'Lucida Sans';
+      color: #fff;
+    }
+
+    input {
+      outline: none;
+      font-family: 'Montserrat';
+      padding: 5px;
+      
+    }
+    span{
+      font-family: 'Lucida Sans';
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <form method="post">
+      <div id="all">
+          <div id="log">
+            <h2>Login Form</h2>
+              <div class="group">
+                <label for="tx">User Name :</label>
+                <input id="user" type="text" placeholder="Enter your Name " name="tx">
+              </div>
+                <br>
+              <div class="group">
+                <label for="txt">PassWord :</label>
+                <input id="pass" type="password" placeholder="Enter your PassWord " name="txt">
+              </div>
+            <br><br>
+            <button onclick="signIn()">login</button>
+            
+          
+      </div>
+  </form>
+  <br>
+  <br>
+  <hr>
+
+  <div id="register">
+    <h2>Register Form</h2>
+    <div class="group">
+      <label for="txt1">User Name :</label>
+      <input id="user1" onblur="val()" type="text" placeholder="Enter your Name " name="txt1">
+
+      <span id="va"> </span>
+    </div>
+
+    <div class="group">
+      <label for="txt2">PassWord :</label>
+      <input id="pass1" type="password" placeholder="Enter your PassWord " name="txt2">
+    </div><br>
+    <div class="group">
+      <label for="txt3">Confirm PassWord :</label>
+      <input id="pass2" onblur="validpass()" type="password" placeholder="Cofirm your PassWord " name="txt3"> <br>
+
+      <span id="spass"></span>
+    </div><br>
+    <div class="group">
+      <label for="txt4">E-mail :</label>
+      <input id="emal" onblur="valid()" type="text" placeholder="Enter your E-mail " name="txt4"> <br>
+
+      <span id="spa1"></span>
+    </div><br> <br>
+
+    <button onclick="signUp()">Sign Up </button>
+  </div>
+  </div>
+  <script src="js/try.js"></script>
+
+</body>
+
+
+</html>
